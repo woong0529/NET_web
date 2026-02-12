@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>동아리 로그인</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div id="login-container">
+        <h2>동아리 학술 자료실 로그인</h2>
+        <input type="email" id="email" placeholder="이메일">
+        <input type="password" id="password" placeholder="비밀번호">
+        <button id="login-btn">로그인</button>
+        <button id="signup-btn">회원가입</button>
+        <p id="message"></p>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
