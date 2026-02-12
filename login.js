@@ -41,16 +41,3 @@ loginBtn.addEventListener('click', async () => {
     }
 });
 
-// 5. 회원가입 함수 (필요 시)
-const signupBtn = document.getElementById('signup-btn');
-signupBtn.addEventListener('click', async () => {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    try {
-        await createUserWithEmailAndPassword(auth, email, password);
-        alert("회원가입 완료!");
-    } catch (error) {
-        document.getElementById('message').innerText = "에러: " + error.message;
-    }
-});
