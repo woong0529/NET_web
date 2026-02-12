@@ -21,7 +21,7 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("로그인 상태:", user.email);
         // 로그인 성공 시 자료실 페이지로 리다이렉트 하거나 화면 전환
-        window.location.href = "index.html"; 
+        window.location.href = "main.html"; 
     } else {
         console.log("로그아웃 상태");
     }
