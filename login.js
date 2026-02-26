@@ -20,8 +20,7 @@ const auth = getAuth(app);
 onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("로그인 상태:", user.email);
-        // 로그인 성공 시 자료실 페이지로 리다이렉트 하거나 화면 전환
-        window.location.href = "main.html"; 
+        alert("이미 로그인 되어있는 계정입니다.");
     } else {
         console.log("로그아웃 상태");
     }
@@ -36,6 +35,7 @@ loginBtn.addEventListener('click', async () => {
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         alert("환영합니다, " + userCredential.user.email + "님!");
+        window.location.href = "main.html"; 
     } catch (error) {
         document.getElementById('message').innerText = "에러: " + error.message;
     }
