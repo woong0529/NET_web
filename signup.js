@@ -18,6 +18,7 @@ document.getElementById('do-signup').addEventListener('click', async () => {
 
     try {
         await createUserWithEmailAndPassword(auth, email, password);
+        await auth.signOut();
         alert("회원가입이 완료되었습니다! 창을 닫고 로그인을 진행해주세요.");
         window.close(); // 가입 성공 시 팝업창 닫기
     } catch (error) {
