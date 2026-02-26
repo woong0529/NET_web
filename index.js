@@ -35,6 +35,7 @@ loginBtn.addEventListener('click', async () => {
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         alert("환영합니다, " + userCredential.user.email + "님!");
+        console.log("로그인 성공:", userCredential.user);
         window.location.href = "main.html"; 
     } catch (error) {
         document.getElementById('message').innerText = "에러: " + error.message;
