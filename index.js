@@ -1,16 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } 
     from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import firebaseConfig from "./api_key.js";
 
-// 1. Firebase 설정 (Firebase Console에서 복사해오세요!)
-const firebaseConfig = {
-    apiKey: "AIzaSyBwTnNv2wsZ65ZMFlwqksIWsymtIlfQoPE",
-    authDomain: "net-login-7c68a.firebaseapp.com",
-    projectId: "net-login-7c68a",
-    storageBucket: "net-login-7c68a.firebasestorage.app",
-    messagingSenderId: "53195102418",
-    appId: "1:53195102418:web:513dcde61a59895047350b"
-};
 
 // 2. Firebase 초기화
 const app = initializeApp(firebaseConfig);
