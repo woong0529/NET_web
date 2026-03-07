@@ -1,7 +1,8 @@
+import firebaseConfig from "./api_key.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } 
     from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import firebaseConfig from "./api_key.js";
+
 
 
 // 2. Firebase 초기화
