@@ -1,14 +1,8 @@
+import firebaseConfig from "./api_key.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBwTnNv2wsZ65ZMFlwqksIWsymtIlfQoPE",
-    authDomain: "net-login-7c68a.firebaseapp.com",
-    projectId: "net-login-7c68a",
-    storageBucket: "net-login-7c68a.firebasestorage.app",
-    messagingSenderId: "53195102418",
-    appId: "1:53195102418:web:513dcde61a59895047350b"
-    };
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
